@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client-form</title>
+
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- roboto font ember code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="{% static 'css/style5.css' %}">
+</head>
+<body>
+    <div class="background-page">
+        <section class="container">
+            <div><a href="index.html" class="cancel-icon"><i class="fa-solid fa-xmark"></i></a></div>
+            <header>Client Demand Form</header>
+            <form action="index6.html" class="form">
+
+                <div class="input-box">
+                    <label>Select Type of Worker</label>
+                    <select name="" id="worker-select">
+                        <option value="">Electrician</option>
+                        <option value="">Painter</option>
+                        <option value="">Plumber</option>
+                        <option value="">Majdur</option>
+                        <option value="">Rajgeer</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter full name" required/>
+                </div>
+
+
+                <div class="input-box">
+                    <label>Full Address of Worker Location</label>
+                    <input type="text" placeholder="Enter full address of worker location" required/>
+                </div>
+
+               
+                <div class="column">
+                    <div class="input-box">
+                        <label>Landmark</label>
+                        <input type="text" placeholder="Enter landmark (optional)">
+                    </div>
+                    <div class="input-box">
+                        <label>Pincode</label>
+                        <input type="text" placeholder="Enter pincode" style="width: 300px;" required/>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label>Contact Number</label>
+                        <input type="number" placeholder="Enter contact number" required/>
+                    </div>
+                    <div class="input-box">
+                        <label>Date of Work</label>
+                        <input type="date" style="width: 300px;" required/>
+                    </div>
+                </div>
+                
+                
+                <div class="column">
+                    <div class="input-box">
+                        <label>Number of Worker Required</label>
+                        <input type="number" placeholder="Enter required worker number" min="1" required/>
+                    </div>
+                    <div class="input-box">
+                        <label>Share Work Location (optional)</label>
+                        <input type="text" placeholder="Enter worker location link" style="width: 300px;">
+                    </div>
+                </div>
+                
+
+                
+                <button>Submit</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

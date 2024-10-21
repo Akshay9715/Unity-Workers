@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link of swiper css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- roboto font ember code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bebas Neue font ember code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{% static 'css/style8.css' %}">
+    <title>UWC/workers registration form</title>
+</head>
+<body>
+    <div class="background-page">
+        <section class="container">
+            <div><a href="index.html" class="cancel-icon"><i class="fa-solid fa-xmark"></i></a></div>
+            <header>Worker Registration Form</header>
+            <form action="index.html" class="form">
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter full name" required/>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label>Age</label>
+                        <input type="number" placeholder="Enter your age" min="16" required/>
+                    </div>
+                    <div class="input-box">
+                        <label>Photo (Passport Size)</label>
+                        <div class="file-button"><input type="file"  style="width: 300px;" id="file-id"  required/></div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label>Full Address</label>
+                    <input type="text" placeholder="Enter full address" required/>
+                </div>
+
+                <div class="column">
+                    <div class="input-box">
+                        <label>District</label>
+                        <input type="text" placeholder="Enter district" required/>
+                    </div>
+                    <div class="input-box">
+                        <label>Village</label>
+                        <input type="text" placeholder="Enter village (optional)" style="width: 300px;" >
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label>Tehsil</label>
+                        <input type="text" placeholder="Enter tehsil" required/>
+                    </div>
+                    <div class="input-box">
+                        <label>Pincode</label>
+                        <input type="text" placeholder="Enter pincode" style="width: 300px;" required/>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label>State</label>
+                        <input type="text" placeholder="Enter state" required/>
+                    </div>
+                    <div class="input-box">
+                        <label>Date of Birth</label>
+                        <input type="date" placeholder="Enter pincode" style="width: 300px;" required/>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label>Mobile number</label>
+                        <input type="number" placeholder="mobile number" required/>
+                    </div>
+                    <div class="input-box">
+                        <label>Whatsapp number</label>
+                        <input type="number" placeholder="Enter whatsapp number (optional)" style="width: 300px;" >
+                    </div>
+                </div>
+                <div class="gender-box">
+                    <h3>Gender</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="check-male" class="gender" name="gender" checked/>
+                            <label for="check-male">Male</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-female" class="gender" name="gender" >
+                            <label for="check-female">Female</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-other" class="gender" name="gender" >
+                            <label for="check-other">Other</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label>Bank Branch Name</label>
+                        <input type="text" placeholder="Enter bank branch name" required/>
+                    </div>
+                    <div class="input-box">
+                        <label>IFSC Code</label>
+                        <input type="text" placeholder="Enter IFSC code" style="width: 300px;" required/>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label>Bank Account Number</label>
+                        <input type="text" placeholder="Enter bank account number" required/>
+                    </div>
+                    <div class="input-box">
+                        <label>Bank Passbook PDF (Front Page)</label>
+                        <div class="file-button"><input type="file"  style="width: 300px;" id="file-id"  required/></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label>Aadhar Number</label>
+                        <input type="text" placeholder="Enter bank aadhar number" required/>
+                    </div>
+                    <div class="input-box">
+                        <label>Aadhar Card PDF (Both Side)</label>
+                        <div class="file-button"><input type="file"  style="width: 300px;" id="file-id"  required/></div>
+                    </div>
+                </div>
+
+                <div class="gender-box">
+                    <h3>Marital Status</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="check-male" name="marital-status" class="gender" /checked>
+                            <label for="check-male">Married</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-female" name="marital-status" class="gender" >
+                            <label for="check-female">Unmarried</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-other" name="marital-status" class="gender" >
+                            <label for="check-other">Widow</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="input-box">
+                        <label for="">Education Qualification</label>
+                        <input type="text" placeholder="Enter education qualification (optional)">
+                       
+                    </div>
+                    <div class="input-box">
+                        <label>Work Experience (In Years)</label>
+                        <input type="number" placeholder="Enter 'zero' for less then 1 year" style="width: 300px;" required/>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label>Select Worker Type (can select more then one)</label>
+                    <br>
+                    <input type="checkbox" id="worker-input">
+                    <label for="" id="worker-label">Electrician</label>
+                    <br>
+                    <input type="checkbox" id="worker-input">
+                    <label for="" id="worker-label">Painter</label>
+                    <br>
+                    <input type="checkbox" id="worker-input">
+                    <label for="" id="worker-label">Plumber</label>
+                    <br>
+                    <input type="checkbox" id="worker-input">
+                    <label for="" id="worker-label">Majdur</label>
+                    <br>
+                    <input type="checkbox" id="worker-input">
+                    <label for="" id="worker-label">Rajgeer</label>
+                    <br>
+                </div>
+
+                
+                <button>Submit</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

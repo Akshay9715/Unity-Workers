@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWC/home-page</title>
+
+    <!-- link of swiper css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- roboto font ember code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bebas Neue font ember code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="title-bar">
+            <div class="title-bar-logo">
+                <div class="main-logo"></div>
+            </div>
+
+            <div class="title">
+                <p class="title-uwc">UNITY WORKERS AND CONSTRUCTIONS</p>
+                <div class="title-line">
+                    <p>Jann Kalyan Desh Kalyan</p>
+                </div>
+            </div>
+
+            <div class="worker-title">
+                <p class="worker-name">Ram Lal Singh</p>
+                <div class="worker-rollno">
+                    <p>24ET0001</p>
+                </div>
+            </div>
+
+            <div class="language">
+                <div class="laguage-icon"><i class="fa-solid fa-globe"></i></div>
+                <select name="language" class="language-select">
+                    <option value="english">English</option>
+                    <option value="hindi">हिंदी</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <div class="hover-underline">
+                <a href="index.html" id="home"><span>Home</span></a>
+            </div>
+            <div class="hover-underline">
+                <a href="#client-page" id="client"><span>Client</span></a>
+            </div>
+            <div class="hover-underline">
+                <a href="#worker-page" id="worker"><span>Worker</span></a>
+            </div>
+            <div class="hover-underline">
+                <a href="#about-us-page" id="about-us"><span>About us</span></a>
+            </div>
+            
+            <div class="hover-underline">
+                <a href="#contact-us-page" id="contact-us"><span>Contact us</span></a>
+            </div>
+            
+
+            <div class="hover-underline">
+                <a href="index7.html" id="login"><span>Login</span></a>
+            </div>
+            <div class="hover-underline">
+                <a href="index8.html" id="register"><span>Register</span></a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="hero-container">
+        <div class="hero-wrapper">
+            <img src="{% static 'images/hero-section-image1.png' %}" alt="" class="hero-image">
+            <img src="{% static 'images/hero-section-image2.png' %}" alt="" class="hero-image">
+            <img src="{% static 'images/hero-section-image3.png' %}" alt="" class="hero-image">
+            <img src="{% static 'images/hero-section-image2.png' %}" alt="" class="hero-image">
+        </div>
+    </div>
+
+    <div>
+        <a href="https://www.whatsapp.com/" target="_main"><button  class="whatsapp-support">WhatsApp Support</button></a>
+    </div>
+
+
+    <!-- this section of code is for client page -->
+    <div id="client-page">
+
+
+        <div class="container swiper">
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+
+                    <li class="card-item swiper-slide">
+                        <a href="index3.html" class="card-link">
+                            <img src="{% static 'images/electrician-image.webp' %}" alt="img" class="card-image">
+                            <p class="badge">Electrician</p>
+                            <h2 class="card-title">Trained to do all work related to electricity.<br><br>Per Day Wage : <b> Rs 400/-</b></h2>
+                            <button class="card-button"><i class="fa-solid fa-arrow-right"></i></button>
+                        </a>
+                    </li>
+
+                    <li class="card-item swiper-slide">
+                        <a href="index3.html" class="card-link">
+                            <img src="{% static 'images/painter-image.webp' %}" alt="img" class="card-image">
+                            <p class="badge">Painter</p>
+                            <h2 class="card-title">Trained to do all work related to painting.<br><br>Per Day Wage : <b> Rs 400/-</b></h2>
+                            <button class="card-button"><i class="fa-solid fa-arrow-right"></i></button>
+                        </a>
+                    </li>
+
+                    <li class="card-item swiper-slide">
+                        <a href="index3.html" class="card-link">
+                            <img src="{% static 'images/plumber-image.webp' %}" alt="img" class="card-image">
+                            <p class="badge">Plumber</p>
+                            <h2 class="card-title">Trained to do all work related to plumbing.<br><br>Per Day Wage : <b> Rs 400/-</b></h2>
+                            <button class="card-button"><i class="fa-solid fa-arrow-right"></i></button>
+                        </a>
+                    </li>
+
+                    <li class="card-item swiper-slide">
+                        <a href="index3.html" class="card-link">
+                            <img src="{% static 'images/majdur-image.webp' %}" alt="img" class="card-image">
+                            <p class="badge">Majdor</p>
+                            <h2 class="card-title">Trained to do all work related to construction site.<br><br>Per Day Wage : <b> Rs 400/-</b></h2>
+                            <button class="card-button"><i class="fa-solid fa-arrow-right"></i></button>
+                        </a>
+                    </li>
+
+                    <li class="card-item swiper-slide">
+                        <a href="index3.html" class="card-link">
+                            <img src="{% static 'images/contract-image.webp' %}" alt="img" class="card-image">
+                            <p class="badge">Contract</p>
+                            <h2 class="card-title">We also provide complete Contract Service.<br><br>Cost of Contract : <b>Depends</b></h2>
+                            <button class="card-button"><i class="fa-solid fa-arrow-right"></i></button>
+                        </a>
+                    </li>
+
+                    <li class="card-item swiper-slide">
+                        <a href="index3.html" class="card-link">
+                            <img src="{% static 'images/rajgeer-image.webp' %}" alt="img" class="card-image">
+                            <p class="badge">Rajgeer</p>
+                            <h2 class="card-title">Trained Rajgeer to build your dream house.<br><br>Cost of Contract : <b>Depends</b></h2>
+                            <button class="card-button"><i class="fa-solid fa-arrow-right"></i></button>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+
+            </div>
+        </div>
+
+    </div>
+      <!-- this is section is for worker page -->
+      <div id="worker-page">
+        <div class="inner-page">
+
+            <div class="heading-div-worker"> 
+                <p class="title-of-worker">How to use the Website. <br> वेबसाइट का उपयोग कैसे कर l</p>
+                <p class="title-of-worker" id="title-2">Video tutorial : How to use the Website. <br> वीडियो ट्यूटोरियल: वेबसाइट का उपयोग कैसे करें l</p>
+            </div>
+            <div class="content">
+                <div id="text-area">
+                    <p class="text-step">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore ut tenetur, dolorem deleniti soluta reiciendis hic! Cum tempora voluptatum reiciendis id quidem, soluta officia? Quia, sint? Non quam aperiam et?</p>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/__qcpB3rXV4?si=byxuRamX9LD9bBD1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+           
+    </div>
+
+    <!-- this section of code is for about section and contact us -->
+    
+    <div id="about-us-page">
+        dfgdfg
+
+    </div>
+    <div id="contact-us-page">
+        sdfsdf
+
+    </div>
+
+
+      
+    
+
+
+       
+
+    <!-- link of swiper js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- main script file -->
+     <script src="sctipt.js"></script>
+</body>
+</html>
